@@ -41,14 +41,14 @@ jobs:
         if: github.ref != 'refs/heads/main'
         run: echo "This is not the main branch."
 
+      - name: Change directory to project root
+        run: cd /Users/shobanaanand/Desktop/first_workflow/first_workflow/.github/workflows
+
       - name: Install Dependencies
         run: npm install
-        working-directory: /Users/shobanaanand/Desktop/first_workflow/first_workflow/.github/workflows
-
+        
       - name: Run tests
         run: npm test
-        working-directory: /Users/shobanaanand/Desktop/first_workflow/first_workflow/.github/workflows
-
 
       - name: Debug message
         if: env.DEBUG == 'true'
@@ -73,14 +73,14 @@ jobs:
         if: github.ref != 'refs/heads/main'
         run: echo "This is not the main branch."
 
+      - name: Change directory to project root
+        run: cd /Users/shobanaanand/Desktop/first_workflow/first_workflow/.github/workflows
+
       - name: Install Dependencies
         run: npm install
-        working-directory: /Users/shobanaanand/Desktop/first_workflow/first_workflow/.github/workflows
-
+        
       - name: Run tests
         run: npm test
-        working-directory: /Users/shobanaanand/Desktop/first_workflow/first_workflow/.github/workflows
-
 
       - name: Debug message
         if: env.DEBUG == 'true'
