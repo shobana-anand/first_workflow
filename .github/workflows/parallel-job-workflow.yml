@@ -41,9 +41,6 @@ jobs:
         if: github.ref != 'refs/heads/main'
         run: echo "This is not the main branch."
 
-      - name: Change directory to project root
-        run: cd /Users/shobanaanand/Desktop/first_workflow/first_workflow/.github/workflows
-
       - name: Install Dependencies
         run: npm install
         
@@ -72,9 +69,6 @@ jobs:
       - name: Print a message for non-main branches
         if: github.ref != 'refs/heads/main'
         run: echo "This is not the main branch."
-
-      - name: Change directory to project root
-        run: cd /Users/shobanaanand/Desktop/first_workflow/first_workflow/.github/workflows
 
       - name: Install Dependencies
         run: npm install
