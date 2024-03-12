@@ -42,7 +42,7 @@ jobs:
         run: echo "This is not the main branch."
 
       - name: Change directory to where package.json is located
-        run: cd /Users/shobanaanand
+        run: cd ../Users/shobanaanand
 
       - name: Install Dependencies
         run: npm install
@@ -74,7 +74,7 @@ jobs:
         run: echo "This is not the main branch."
 
       - name: Change directory to where package.json is located
-        run: cd /Users/shobanaanand
+        run: cd ../Users/shobanaanand
 
       - name: Install Dependencies
         run: npm install
