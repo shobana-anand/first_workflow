@@ -46,9 +46,15 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+
+      - name: Print a npm install Success Message
+        run: echo "npm installed.. Hurray."
         
       - name: Run tests
         run: npm test
+
+      - name: Print a npm test Success Message
+        run: echo "npm test run successfully. Hurray."
 
       - name: Debug message
         if: env.DEBUG == 'true'
@@ -76,11 +82,11 @@ jobs:
       # - name: Change directory to project root
       #  run: cd /home/runner/work/first_workflow/first_workflow/.github/workflows
 
-      - name: Install Dependencies
-        run: npm install
+      # - name: Install Dependencies
+      #  run: npm install
 
-      - name: Print a npm install Success Message
-        run: echo "npm installed.. Hurray."
+      # - name: Print a npm install Success Message
+      #   run: echo "npm installed.. Hurray."
         
       - name: Run tests
         run: npm test
